@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             acre_lot: acreLot
         };
 
-        fetch('my_app/predict', {
+        fetch('/predict', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
