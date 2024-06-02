@@ -4,7 +4,7 @@ import pickle
 app = Flask("my_app")
 
 # Load your trained model (assuming it's a pickle file)
-with open('model.pkl', 'rb') as f:
+with open('LR_no_outliers.pkl', 'rb') as f:
     model = pickle.load(f)
 
 @app.route('/predict', methods=['POST'])
